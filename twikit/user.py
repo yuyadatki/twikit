@@ -103,6 +103,7 @@ class User:
         self.urls: list = legacy['entities'].get('url', {}).get('urls')
         self.pinned_tweet_ids: list[str] = legacy['pinned_tweet_ids_str']
         self.is_blue_verified: bool = data['is_blue_verified']
+        self.verification: dict = data['verification']
         self.verified: bool = legacy['verified']
         self.possibly_sensitive: bool = legacy['possibly_sensitive']
         self.can_dm: bool = legacy['can_dm']
