@@ -248,7 +248,7 @@ class GQLClient:
             'withSafetyModeUserFields': False
         }
         params = {
-            'fieldToggles': {'withAuxiliaryUserLabels': False}
+            'fieldToggles': {'withAuxiliaryUserLabels': True}
         }
         return await self.gql_get(Endpoint.USER_BY_SCREEN_NAME, variables, USER_FEATURES, extra_params=params)
 
